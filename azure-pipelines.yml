@@ -43,7 +43,6 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: Npm@1
-  displayName: "JS Unit Test"
   inputs:
     command: 'custom'
     customCommand: 'run test'
