@@ -41,3 +41,8 @@ steps:
     codeCoverageEnabled: true
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: Npm@1
+  displayName: "Server Unit Test"
+  inputs:
+    command: 'custom'
+    customCommand: 'run test'
